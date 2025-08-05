@@ -242,6 +242,39 @@
             </div>
         </section>
 
+        <!-- Pre-sale Section -->
+        <section id="presale" class="py-20 md:py-32 bg-black">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="font-cinzel-decorative text-5xl font-bold text-glow mb-4">Pre-Order Aether</h2>
+                <p class="text-lg text-gray-300 leading-relaxed max-w-3xl mx-auto mb-8">
+                    Secure your limited first edition, author-signed hardcover of Aether. Be among the first to delve into a world where logic and chaos collide.
+                </p>
+                <div class="max-w-2xl mx-auto bg-gray-900 p-8 rounded-lg shadow-lg">
+                    <h3 class="font-orbitron text-3xl font-bold text-glow mb-4">Limited First Edition Release</h3>
+                    <p class="text-2xl text-white mb-2">$24.99 <span class="text-base line-through text-gray-500">$29.99</span></p>
+                    <p class="text-gray-400 mb-6">All pre-sale hardcovers will be signed by Bryce Falcon.</p>
+                    
+                    <form action="/preorder" method="POST">
+                        <input type="hidden" name="product_id" value="AETHER_HARDCOVER_SKU">
+                        <div class="mb-6 text-left">
+                            <label class="flex items-center text-white">
+                                <input type="checkbox" name="dedication" value="true" class="form-checkbox h-5 w-5 text-blue-600">
+                                <span class="ml-2">Add a personalized dedication (+$5.00)</span>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn-primary font-bold py-3 px-12 rounded-lg uppercase tracking-wider w-full">
+                            Pre-Order Now
+                        </button>
+                    </form>
+
+                    <div class="mt-8">
+                        <h4 class="font-orbitron text-2xl font-bold text-glow mb-4">Want a sneak peek?</h4>
+                        <a href="chapter1_preview.html" class="text-blue-400 hover:text-blue-200 transition-colors duration-300 font-bold">Read Chapter 1: Genesis now!</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Reviews Section -->
         <section id="reviews" class="py-20 md:py-32 bg-black">
             <div class="container mx-auto px-6">
@@ -300,7 +333,7 @@
                 <div class="mt-16 text-center max-w-2xl mx-auto">
                     <h3 class="font-cinzel-decorative text-2xl font-bold text-glow mb-4">Stay Updated</h3>
                     <p class="text-gray-400 mb-6">Get notified about new releases, exclusive content, and behind-the-scenes insights.</p>
-                    <form id="newsletter-form" class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto" novalidate>
+                    <form id="newsletter-form" action="/subscribe" method="POST" class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto" novalidate>
                         <label for="newsletter-email" class="sr-only">Email address</label>
                         <input type="email" id="newsletter-email" name="email" placeholder="Enter your email" class="form-input flex-1 p-3 rounded-md border-2 focus:outline-none" required aria-describedby="newsletter-status">
                         <button type="submit" class="btn-primary font-bold py-3 px-6 rounded-lg uppercase tracking-wider">
