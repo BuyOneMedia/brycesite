@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://brycefalcon.com/sitemap.xml
+Sitemap: https://seansandoval.com/sitemap.xml
 
 # Crawl-delay for respectful crawling
 Crawl-delay: 1
