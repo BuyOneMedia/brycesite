@@ -1,6 +1,6 @@
 {
-    "name": "Bryce Falcon - Science Fiction Author",
-    "short_name": "Bryce Falcon",
+    "name": "Sean Sandoval - Science Fiction Author",
+    "short_name": "Sean Sandoval",
     "description": "Award-winning science fiction author of Aether - exploring the dark intersections of technology and trauma where AI meets humanity.",
     "start_url": "/",
     "display": "standalone",
@@ -43,7 +43,7 @@
             "src": "/images/aether.jpeg",
             "sizes": "1280x800",
             "type": "image/jpeg",
-            "label": "Aether - Science Fiction Novel by Bryce Falcon"
+            "label": "Aether - Science Fiction Novel by Sean Sandoval"
         }
     ],
     "shortcuts": [
@@ -57,7 +57,7 @@
         {
             "name": "Contact Author",
             "short_name": "Contact",
-            "description": "Get in touch with Bryce Falcon",
+            "description": "Get in touch with Sean Sandoval",
             "url": "/#contact",
             "icons": [{ "src": "/favicon-192x192.png", "sizes": "192x192" }]
         }
